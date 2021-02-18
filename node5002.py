@@ -190,7 +190,7 @@ def mine_block():
     previous_hash = blockchain.hash(previous_block)
     
     # adds the transaction to the one who minned (compensation to minner)
-    blockchain.add_transaction(sender= node_address, receiver='minnerx', amount=6.5)
+    blockchain.add_transaction(sender= node_address, receiver='node5002', amount=6.5)
     
     # creates the new block
     block = blockchain.create_block(proof, previous_hash)
@@ -292,7 +292,7 @@ def replace_chain():
 
 
 # running the app
-app.run(host = '0.0.0.0', port = 5000)               
+app.run(host = '0.0.0.0', port = 5002)               
                 
                 
                 
